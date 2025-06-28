@@ -1,5 +1,5 @@
 [package]
-name = "chroma-rs"
+name = "khroma"
 version = "0.1.0"
 edition = "2024"
 
