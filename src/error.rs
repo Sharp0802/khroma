@@ -2,7 +2,7 @@ use reqwest::StatusCode;
 use thiserror::Error;
 
 #[derive(Debug, Error)]
-pub enum ChromaError {
+pub enum KhromaError {
     #[error("Network or transport error: {0}")]
     Reqwest(#[from] reqwest::Error),
 
