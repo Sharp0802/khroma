@@ -243,6 +243,11 @@ impl Tenant {
         self.client.create_database(&self.name, &payload).await?;
         Ok(self.database(name))
     }
+    
+    pub async fn delete_database(&self, name: &str) -> Result<(), KhromaError> {
+        self.client.delete_database(&self.name, &name).await?;
+        Ok(())
+    }
 
     pub async fn list_databases(
         &self,
